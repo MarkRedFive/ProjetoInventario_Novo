@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".CadastroUsuarioActivity">
+
+        <EditText
+            android:id="@+id/editNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="50dp"
+            android:hint="Nome do item"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editQuantidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="50dp"
+            android:hint="Quantidade"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editPeso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="50dp"
+            android:hint="Peso"
+            android:inputType="number|numberDecimal" />
+
+        <EditText
+            android:id="@+id/editValor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="50dp"
+            android:hint="Valor"
+            android:inputType="number|numberDecimal" />
+
+        <EditText
+            android:id="@+id/editRaridade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="50dp"
+            android:hint="Raridade"
+            android:inputType="text" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:text="Item mágico"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/editEfeito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="50dp"
+            android:hint="Efeito"
+            android:inputType="text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCadastrar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/botaoCadastrar"
+                android:backgroundTint="@color/botaoCadastrar"
+                android:onClick="metodoCadastrar"
+                android:text="Cadastrar Novo" />
+
+            <Button
+                android:id="@+id/btnAlterar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/botaoAlterar"
+                android:backgroundTint="@color/botaoAlterar"
+                android:text="Alterar Cadastro" />
+
+            <Button
+                android:id="@+id/btnExcluir"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/botaoDeletar"
+                android:backgroundTint="@color/botaoDeletar"
+                android:text="Excluir Cadastro" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/campoTeste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exibirá o resultado"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
